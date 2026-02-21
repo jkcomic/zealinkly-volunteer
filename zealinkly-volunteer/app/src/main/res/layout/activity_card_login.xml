@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="24dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="返回"
+            android:background="@drawable/rounded_corner_background"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="卡片登录"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请拍摄或选择身份证或社区卡照片"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_card_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="卡片照片" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="拍照"
+            android:background="@drawable/rounded_corner_background"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/btn_select_photo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="选择照片"
+            android:background="@drawable/rounded_corner_background"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支持身份证和社区卡识别"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

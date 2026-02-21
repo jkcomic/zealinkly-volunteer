@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交任务完成"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 完成说明 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成说明"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="请输入任务完成情况"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 凭证上传 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="凭证上传"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_add_evidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加凭证（图片）"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 凭证列表 -->
+    <LinearLayout
+        android:id="@+id/ll_evidences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:minHeight="80dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 操作按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginRight="16dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
